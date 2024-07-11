@@ -3,14 +3,14 @@ import { MapContainer, TileLayer, Marker, Popup } from 'react-leaflet';
 import 'leaflet/dist/leaflet.css'
 
 const Country = () => {
-  const [Countrys, setCountrys] = useState([{ "flags": Map, "name": "WorldView", "maps": { "openStreetMaps": "https://www.openstreetmap.org/relation/1993867" } }]);
+  const [Countrys, setCountrys] = useState([{"coatOfArms": {"png": ""},"car": {"signs": [""]},"flags": Map, "name": "WorldView", "maps": { "openStreetMaps": "" } }]);
   const [showMap, setshowMap] = useState(false)
   const [position, setposition] = useState()
   const queryParams = new URLSearchParams(window.location.search)
   const name = queryParams.get("name")
   useEffect(() => {
     async function getCountry() {
-      const res = await fetch(`https://restcountries.com/v3.1/name/${name}`)
+      const res = await fetch(`https://restcountries.com/v3.1/alpha/${name}`)
       const data = await res.json();
       setCountrys(data)
       setposition(data[0].latlng);
@@ -56,6 +56,22 @@ const Country = () => {
                 <div className='text-desc-head '>Continents & Capotals</div>
                 <div className=' '>{Countrys[0].continents}</div>
                 <div className='  '>{Countrys[0].capital}</div>
+              </div>
+            </div>
+            <div className='text-white  my-3 row row-cols-md-3'>
+              <div>
+                <div className='text-desc-head'>Area & Population</div>
+                <div className=' '>{Countrys[0].area}</div>
+                <div className='  '>{Countrys[0].population}</div>
+              </div>
+              <div>
+                <div className='text-desc-head '>Country code</div>
+                <div className=' '>{Countrys[0].car.signs}</div>
+                <div className='  '>{Countrys[0].ccn3}</div>
+              </div>
+              <div>
+                <div className='text-desc-head '>Coat Of Arms</div>
+                <img style={{height:'100px'}} src={Countrys[0].coatOfArms.png} alt="" />
               </div>
             </div>
 
