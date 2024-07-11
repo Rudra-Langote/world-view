@@ -27,7 +27,7 @@ const Cards = () => {
       <div  className=' mb-1 py-2  rounded front container'>
         <div className="row row-cols-1 row-cols-md-3 g-4">
           {Countrys.map((item,index)=>{return<NavLink key={index} onClick={()=>handelScroll(500)} className=' text-white underline-remove  rounded'
-                 to={`/Country?name=${item.name.common}`} ><div className="col">
+                 to={`/Country?name=${item.ccn3}`} ><div className="col">
             <div className="card">
               <img src={item.flags.png} style={{height:'30vh'}} className="card-img-top" alt="..." />
               <div className="card-body">
