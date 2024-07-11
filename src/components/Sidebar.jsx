@@ -24,7 +24,7 @@ const Sidebar = () => {
         
         <div>
             <form className=" flex mt-3 " role="search">
-              <input onChange={(e)=> setserch(e.target.value)} className="form-control me-2" type="search" placeholder="Search" aria-label="Search" /> 
+              <input onChange={(e)=> setserch(e.target.value.toLowerCase())} className="form-control me-2" type="search" placeholder="Search" aria-label="Search" /> 
             </form>
             <nav  className="nav py-2   text-white  flex-column">
                 {Countrys.filter((item)=>{

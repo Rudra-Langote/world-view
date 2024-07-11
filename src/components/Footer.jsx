@@ -6,7 +6,7 @@ import X from '../../public/Xlogo.svg'
 const Footer = () => {
   return (
     <div>
-      <footer className="front text-white mt-5 p-4">
+      <footer className="front text-white mt-2 p-4">
       <div className="container">
         <div className="row justify-content-center">
           <div className="col-auto">

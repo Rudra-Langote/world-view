@@ -7,7 +7,7 @@ const Header = () => {
     <nav className="navbar front  fixed-top">
       <div className="container-fluid front">
         <a className="navbar-brand logo text-white" href="#">WordView</a>
-        <button className="navbar-toggler d-block d-md-none" type="button" data-bs-toggle="offcanvas" data-bs-target="#offcanvasNavbar" aria-controls="offcanvasNavbar" aria-label="Toggle navigation">
+        <button className="navbar-toggler bg-white d-block d-md-none" type="button" data-bs-toggle="offcanvas" data-bs-target="#offcanvasNavbar" aria-controls="offcanvasNavbar" aria-label="Toggle navigation">
           <span className="  navbar-toggler-icon"></span>
         </button>
         

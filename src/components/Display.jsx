@@ -46,7 +46,7 @@ const Display = () => {
         <div  className=' display-size mt-4 p-0  overflow-hidden   position-relative rounded front container'>
 
             <div  className=' z-2 position-absolute rounded  display-size gradient'></div>
-            <img ref={flagref} style={{height:'500px'}} src={Countrys[index].flags.png}  className=' object-fit-fill display-size img-fluid mx-auto rounded  ' alt="" />
+            <img ref={flagref} src={Countrys[index].flags.png}  className=' object-fit-fill display-size img-fluid mx-auto rounded  ' alt="" />
 
             <span ref={namref} className=' z-3  position-absolute display-position-head '>{Countrys[index].name.common}</span>
             <div ref={descref} style={{height: '20vh', width: '82vw' }} className='position-absolute px-3 d-none d-md-flex bg-trans  justify-content-between  z-3 display-position-desc'>
