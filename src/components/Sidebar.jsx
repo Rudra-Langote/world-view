@@ -29,7 +29,7 @@ const Sidebar = () => {
             <nav  className="nav py-2   text-white  flex-column">
                 {Countrys.filter((item)=>{
                     return serch.toLowerCase() ===''?item : item.name.common.toLowerCase().includes(serch)
-                }).map((item,index)=>{return<NavLink key={index} onClick={()=>handelScroll(480)} className=' text-white underline-remove  rounded' to={`/Country?name=${item.name.common}`} ><div className=' btn-hov  py-2 px-2'>
+                }).map((item,index)=>{return<NavLink key={index} onClick={()=>handelScroll(480)}  className=' text-white underline-remove  rounded' to={`/Country?name=${item.name.common}`} ><div className=' btn-hov  py-2 px-2'>
                     <span>{item.name.common}</span>
                 </div></NavLink>})}
 

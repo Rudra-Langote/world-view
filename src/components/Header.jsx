@@ -13,6 +13,7 @@ const Header = () => {
         
         <div className="offcanvas d-md-none offcanvas-end" tabindex="-1" id="offcanvasNavbar" aria-labelledby="offcanvasNavbarLabel">
           <div className="offcanvas-header front">
+          <h5 class="offcanvas-title text-white" id="offcanvasNavbarLabel">WorldView</h5>
             <button type="button" className="btn-close" data-bs-dismiss="offcanvas" aria-label="Close"></button>
           </div>
           <div className="offcanvas-body  front">
