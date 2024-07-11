@@ -11,9 +11,9 @@ const Header = () => {
           <span className="  navbar-toggler-icon"></span>
         </button>
         
-        <div className="offcanvas d-md-none offcanvas-end" tabindex="-1" id="offcanvasNavbar" aria-labelledby="offcanvasNavbarLabel">
+        <div className="offcanvas d-md-none offcanvas-end" tabIndex="-1" id="offcanvasNavbar" aria-labelledby="offcanvasNavbarLabel">
           <div className="offcanvas-header front">
-          <h5 class="offcanvas-title text-white" id="offcanvasNavbarLabel">WorldView</h5>
+          <h5 className="offcanvas-title text-white" id="offcanvasNavbarLabel">WorldView</h5>
             <button type="button" className="btn-close bg-white" data-bs-dismiss="offcanvas" aria-label="Close"></button>
           </div>
           <div className="offcanvas-body  front">
