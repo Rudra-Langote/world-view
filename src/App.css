@@ -1,0 +1,204 @@
+.maindiv{
+  height: calc(100vh - 51px);
+}
+.front{
+  background-color:#17202A;
+
+}
+div{
+  font-family: "Poppins", sans-serif;
+  font-weight: 200;
+  font-style: normal;
+}
+.display-size{
+  height: 80vh;
+  width: 100vw;
+}
+.logo{
+  font-weight: 400;
+
+}
+.display-position-desc{
+  bottom: 0px;
+  font-size: 20px;
+  font-weight: 500;
+  color: white;
+  background-color: #00000069;
+  backdrop-filter: blur(10px);
+  border-radius: 20px 20px 0 0;
+}
+.text-head{
+  font-size: 50px;
+  font-weight: 500;
+  color: white;
+}
+.text-desc-head{
+  font-size: 20px;
+  font-weight: 400;
+  color: white;
+}
+
+.flag-enter{
+  animation: 4.3s fadeIn ease-in-out ;
+
+}
+.desc-enter{
+  animation: 4.3s slideRight ease-in-out ;
+}
+.card-text{
+  
+  font-size:20px;
+  font-weight: 400;
+  
+}
+.hidden{
+  display: hidden;
+}
+
+@keyframes fadeIn {
+  0% {
+    opacity: 0;
+  }
+  25% {
+    opacity: 1;
+  }
+  75%{
+    opacity: 1;
+
+  }
+  100%{
+    opacity: 0;
+
+  }
+}
+
+
+
+@keyframes slideRight {
+  0% {
+    margin-bottom: -200px;
+  }
+  25% {
+    margin-bottom: 0;
+  }
+  75%{
+    margin-bottom: 0;
+  }
+  100%{
+    margin-bottom: -200px;
+  }
+}
+.btn-cust{
+  text-align: center;
+  height: 40px;
+  background-color: transparent;
+  padding: 0 15px;
+  font-size: 17px;
+  border: none;
+  border-radius: 5px 5px 0 0;
+  color: white;
+  font-weight: 200;
+  margin-right: 2px;
+  
+
+}
+.btn-cust:hover{
+  outline: 1px solid white;
+  
+}
+.btn-hov:hover{
+  background-color: #148F77;
+  transition-duration: 0.3s;
+  
+}
+.stick{
+  bottom: 0;
+  top: 50px;
+}
+.active-back{
+  background-color: #148F77;
+}
+.underline-remove{
+  text-decoration: none;
+}
+.display-position-head{
+  bottom: 50px;
+  left:10px;
+  right: 50%;
+  font-size: 50px;
+  font-weight: 500;
+  color: white;
+}
+.text-enter{
+  animation: 4.3s slideIn ease-in-out ;
+
+}
+@keyframes slideIn {
+  0% {
+    margin-bottom: -200px;
+  }
+  25% {
+    margin-bottom: 0;
+  }
+  75%{
+    margin-bottom: 0;
+
+  }
+  100%{
+    margin-bottom: -200px;
+
+  }
+}
+
+
+.gradient{
+  background-image: linear-gradient(to top, black 50px, transparent);
+}
+@media (min-width: 768px) { 
+  .gradient{
+    background-image: linear-gradient(to right, black 50px, transparent);
+  }
+  .display-size{
+    height: 80vh;
+    width: 82vw;
+  }
+  .display-position-head{
+    top: 50px;
+    left:70px;
+    font-size: 50px;
+    font-weight: 500;
+    color: white; 
+  }
+  .text-enter{
+    animation: 4.3s slideIn ease-in-out ;
+  
+  }
+  @keyframes slideIn {
+    0% {
+      margin-top: -200px;
+    }
+    25% {
+      margin-top: 0;
+    }
+    75%{
+      margin-top: 0;
+  
+    }
+    100%{
+      margin-top: -200px;
+  
+    }
+  }
+}
+.flag-animation{
+  animation: text-enter 5s  ;
+
+}
+.pading-top{
+  padding-top: 30px;
+}
+
+
+
+
+
